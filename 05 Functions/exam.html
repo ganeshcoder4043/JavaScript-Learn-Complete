@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+    <h1 id="t">web programming</h1>
+
+    <script>
+        setInterval(() => {
+            let el = document.getElementById("t");
+            // Ek hi line mein check aur change:
+            el.innerHTML = (el.innerHTML === "WEB PROGRAMMING") ? 
+                           "web programming" : "WEB PROGRAMMING";
+        }, 15000);
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Converter</title>
+</head>
+<body>
+
+    <h2 id="display-text">web programming</h2>
+
+    <script>
+        // Target the element
+        const textElement = document.getElementById("display-text");
+        
+        // Variable to track current state
+        let isUpper = false;
+
+        function cycleText() {
+            let currentContent = textElement.innerHTML;
+
+            if (isUpper) {
+                // Convert to lower case
+                textElement.innerHTML = currentContent.toLowerCase();
+                isUpper = false;
+            } else {
+                // Convert to upper case
+                textElement.innerHTML = currentContent.toUpperCase();
+                isUpper = true;
+            }
+        }
+
+        // Run the cycleText function every 15 seconds (15000 milliseconds)
+        setInterval(cycleText, 15000);
+    </script>
+
+</body>
+</html>
+
+esko or chhota nhi kr skten hai kya 
