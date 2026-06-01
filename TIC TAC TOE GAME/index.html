@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE GAME</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .row{
+            display: flex;
+        }
+
+        .col{
+            height: 70px;
+            width: 70px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <div onclick="handleClick(this)" id="0" class="col"></div>
+                <div onclick="handleClick(this)" id="1" class="col"></div>
+                <div onclick="handleClick(this)" id="2" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="3" class="col"></div>
+                <div onclick="handleClick(this)" id="4" class="col"></div>
+                <div onclick="handleClick(this)" id="5" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="6" class="col"></div>
+                <div onclick="handleClick(this)" id="7" class="col"></div>
+                <div onclick="handleClick(this)" id="8" class="col"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE GAME</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .grid {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        .col {
+            height: 80px;
+            width: 80px;
+            border: 2px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .col:hover {
+            background: #e0e0e0;
+            transform: scale(1.02);
+        }
+        
+        .game-info {
+            margin-top: 20px;
+        }
+        
+        button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        #turnDisplay {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        
+        #message {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .mode-badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 TIC TAC TOE 🎮</h1>
+        
+        <div class="grid">
+            <div class="row">
+                <div onclick="handleClick(this)" id="0" class="col"></div>
+                <div onclick="handleClick(this)" id="1" class="col"></div>
+                <div onclick="handleClick(this)" id="2" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="3" class="col"></div>
+                <div onclick="handleClick(this)" id="4" class="col"></div>
+                <div onclick="handleClick(this)" id="5" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="6" class="col"></div>
+                <div onclick="handleClick(this)" id="7" class="col"></div>
+                <div onclick="handleClick(this)" id="8" class="col"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
